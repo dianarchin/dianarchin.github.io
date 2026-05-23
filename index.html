@@ -318,6 +318,12 @@
     gap: 1.5rem;
   }
 
+  @media (max-width: 480px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .skill-card {
     position: relative;
     background: linear-gradient(160deg, #1e1500 0%, #110d00 60%, #1a0f00 100%);
@@ -668,6 +674,11 @@
     .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     .project-card { grid-template-columns: 1fr; }
     .hero { padding: 7rem 1.25rem 4rem; }
+    .puzzle-body { padding: 1.25rem 1.25rem; font-size: 12px; }
+    .project-card { padding: 1.25rem 1.25rem 1.25rem 1.75rem; }
+    .section-title { font-size: 1.3rem; }
+    .hero-eye { font-size: 2rem; }
+    .project-num { font-size: 2.5rem; }
   }
 </style>
 </head>
