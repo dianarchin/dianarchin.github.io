@@ -54,7 +54,7 @@ An interactive Jupyter notebook dashboard that analyzes **485 books** from my pe
 
 ---
 
-## 🔮 The Pharaoh's Current Quest
+## 🔮 The Duelist's Current Quest
 
 ```python
 currently = {
