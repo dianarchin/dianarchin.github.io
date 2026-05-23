@@ -32,27 +32,6 @@ I spent years working on the front lines of products and customer experience, le
 | 🗄️ **SQL** | Effect Monster | PostgreSQL · MariaDB · MySQL |
 | 📊 **Dashboards** | Spell Card | Power BI · Looker · Microsoft Excel |
 
----
-
-## 📜 Spell Cards — Projects
-
-### 🌙 [Goodreads Book Dashboard](https://github.com/dianarchin/book-dashboard)
-
-<img src="https://media1.giphy.com/media/wEW9Mw9N00JWw/giphy.gif" width="250" alt="Yami Yugi thinking" />
-
-> *"I activate my Spell Card: Exploratory Data Analysis!"*
-
-An interactive Jupyter notebook dashboard that analyzes **485 books** from my personal Goodreads reading history. Built with Python, Pandas, Matplotlib, and Seaborn — featuring 9+ visualizations including:
-
-- ⭐ Rating distributions & patterns
-- 📅 Reading timelines & year-over-year trends
-- 👤 Favorite authors analysis
-- 📄 Page count distributions
-- 📆 Monthly reading activity over time
-
-**Stack:** `Python` `Pandas` `Matplotlib` `Seaborn` `Jupyter Notebook`
-
----
 
 ## 🔮 The Duelist's Current Quest
 
