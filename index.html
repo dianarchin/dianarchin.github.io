@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Diana Chin — Data Analyst</title>
+<title>Diana Chin — Data & Business Analyst</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
@@ -11,23 +11,23 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0a0700;
-    --bg2: #110d00;
-    --surface: #1a1200;
-    --surface2: #221800;
-    --gold: #c9a84c;
-    --gold-bright: #f0d060;
-    --gold-dim: #7a6020;
-    --purple: #6a0dad;
-    --purple-bright: #9b30ff;
-    --purple-dim: #3d0770;
-    --red: #cc1111;
-    --red-bright: #ff3333;
-    --cyan: #00e5ff;
-    --text: #f0e6c0;
-    --muted: #9a8a60;
-    --border: rgba(201,168,76,0.2);
-    --border-bright: rgba(201,168,76,0.6);
+    --bg: #12081F;
+    --bg2: #1b0e2d;
+    --surface: #241540;
+    --surface2: #34204F;
+    --gold: #8155BA;
+    --gold-bright: #BEABDE;
+    --gold-dim: #5B3B84;
+    --purple: #5B3B84;
+    --purple-bright: #9E7ECD;
+    --purple-dim: #34204F;
+    --red: #9E7ECD;
+    --red-bright: #BEABDE;
+    --cyan: #9E7ECD;
+    --text: #E0D7EF;
+    --muted: #9E86A4;
+    --border: rgba(129,85,186,0.24);
+    --border-bright: rgba(129,85,186,0.6);
     --display: 'Cinzel Decorative', serif;
     --heading: 'Cinzel', serif;
     --body: 'Roboto', sans-serif;
@@ -51,9 +51,9 @@
     position: fixed;
     inset: 0;
     background:
-      radial-gradient(ellipse at 20% 50%, rgba(106,13,173,0.08) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.06) 0%, transparent 50%),
-      radial-gradient(ellipse at 60% 80%, rgba(204,17,17,0.05) 0%, transparent 50%);
+      radial-gradient(ellipse at 20% 50%, rgba(158,126,205,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(129,85,186,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(190,171,222,0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
   }
@@ -67,15 +67,15 @@
       0deg,
       transparent,
       transparent 60px,
-      rgba(201,168,76,0.02) 60px,
-      rgba(201,168,76,0.02) 61px
+      rgba(129,85,186,0.02) 60px,
+      rgba(129,85,186,0.02) 61px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 60px,
-      rgba(201,168,76,0.02) 60px,
-      rgba(201,168,76,0.02) 61px
+      rgba(129,85,186,0.02) 60px,
+      rgba(129,85,186,0.02) 61px
     );
     pointer-events: none;
     z-index: 0;
@@ -109,7 +109,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2.5rem;
-    background: rgba(10,7,0,0.92);
+    background: rgba(18,8,31,0.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
@@ -204,7 +204,7 @@
     line-height: 1.1;
     letter-spacing: 0.05em;
     margin-bottom: 1rem;
-    text-shadow: 0 0 40px rgba(201,168,76,0.4);
+    text-shadow: 0 0 40px rgba(129,85,186,0.4);
   }
   .hero h1 .gold { color: var(--gold-bright); }
   .hero h1 .outline {
@@ -271,7 +271,7 @@
   .btn-primary:hover {
     background: linear-gradient(135deg, var(--gold), var(--gold-bright));
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(201,168,76,0.3);
+    box-shadow: 0 8px 25px rgba(129,85,186,0.3);
   }
   .btn-outline {
     background: transparent;
@@ -280,7 +280,7 @@
     clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
     padding: 0.75rem 2.5rem;
   }
-  .btn-outline:hover { border-color: var(--gold); color: var(--gold-bright); background: rgba(201,168,76,0.08); }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold-bright); background: rgba(129,85,186,0.08); }
 
   /* SECTIONS */
   section { position: relative; z-index: 1; }
@@ -309,18 +309,24 @@
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--gold-bright);
-    text-shadow: 0 0 30px rgba(201,168,76,0.3);
+    text-shadow: 0 0 30px rgba(129,85,186,0.3);
     letter-spacing: 0.05em;
   }
 
   /* SKILL CARDS — styled like Monster Cards */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 900px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 560px) {
     .skills-grid {
       grid-template-columns: 1fr;
     }
@@ -328,7 +334,7 @@
 
   .skill-card {
     position: relative;
-    background: linear-gradient(160deg, #1e1500 0%, #110d00 60%, #1a0f00 100%);
+    background: linear-gradient(160deg, #241540 0%, #1b0e2d 60%, #2a1a4a 100%);
     border: 1px solid var(--gold-dim);
     border-radius: 6px;
     padding: 1.5rem;
@@ -339,7 +345,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(201,168,76,0.05) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(129,85,186,0.05) 0%, transparent 60%);
     pointer-events: none;
   }
   .skill-card::after {
@@ -354,7 +360,7 @@
   .skill-card:hover {
     border-color: var(--gold);
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(201,168,76,0.15), 0 0 20px rgba(201,168,76,0.05);
+    box-shadow: 0 12px 40px rgba(129,85,186,0.15), 0 0 20px rgba(129,85,186,0.05);
   }
   .skill-card:hover::after { opacity: 1; }
 
@@ -384,7 +390,7 @@
   .skill-atk {
     margin-top: 1rem;
     padding-top: 0.75rem;
-    border-top: 1px solid rgba(201,168,76,0.15);
+    border-top: 1px solid rgba(129,85,186,0.15);
     font-family: var(--heading);
     font-size: 10px;
     color: var(--gold-dim);
@@ -394,7 +400,7 @@
   /* PROJECT CARDS — styled like Spell/Trap Cards */
   .project-card {
     position: relative;
-    background: linear-gradient(160deg, #12001a 0%, #0d0014 60%, #150020 100%);
+    background: linear-gradient(160deg, #1f1238 0%, #160c28 60%, #241540 100%);
     border: 1px solid var(--purple-dim);
     border-radius: 6px;
     padding: 2rem 2rem 2rem 2.5rem;
@@ -417,13 +423,13 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(106,13,173,0.08) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(158,126,205,0.08) 0%, transparent 60%);
     pointer-events: none;
   }
   .project-card:hover {
     border-color: var(--purple-bright);
     transform: translateX(4px);
-    box-shadow: -8px 0 30px rgba(106,13,173,0.2), 0 0 40px rgba(106,13,173,0.1);
+    box-shadow: -8px 0 30px rgba(158,126,205,0.2), 0 0 40px rgba(158,126,205,0.1);
   }
 
   .project-card-label {
@@ -447,14 +453,14 @@
     text-transform: uppercase;
     padding: 0.2rem 0.7rem;
     border-radius: 2px;
-    background: rgba(106,13,173,0.2);
+    background: rgba(158,126,205,0.2);
     color: var(--purple-bright);
-    border: 1px solid rgba(106,13,173,0.4);
+    border: 1px solid rgba(158,126,205,0.4);
   }
   .tag.gold-tag {
-    background: rgba(201,168,76,0.1);
+    background: rgba(129,85,186,0.1);
     color: var(--gold);
-    border-color: rgba(201,168,76,0.3);
+    border-color: rgba(129,85,186,0.3);
   }
 
   .project-title {
@@ -496,7 +502,7 @@
     font-family: var(--display);
     font-size: 3.5rem;
     font-weight: 900;
-    color: rgba(106,13,173,0.12);
+    color: rgba(158,126,205,0.12);
     line-height: 1;
     display: block;
   }
@@ -511,7 +517,7 @@
   /* ABOUT — Millennium Puzzle Terminal */
   .puzzle-terminal {
     position: relative;
-    background: linear-gradient(160deg, #0f0a00 0%, #0a0700 100%);
+    background: linear-gradient(160deg, #1b0e2d 0%, #12081F 100%);
     border: 1px solid var(--gold-dim);
     border-radius: 6px;
     overflow: hidden;
@@ -521,12 +527,12 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(135deg, rgba(201,168,76,0.04) 0%, transparent 50%),
-      linear-gradient(315deg, rgba(201,168,76,0.04) 0%, transparent 50%);
+      linear-gradient(135deg, rgba(129,85,186,0.04) 0%, transparent 50%),
+      linear-gradient(315deg, rgba(129,85,186,0.04) 0%, transparent 50%);
     pointer-events: none;
   }
   .puzzle-bar {
-    background: linear-gradient(90deg, var(--surface2), rgba(201,168,76,0.1), var(--surface2));
+    background: linear-gradient(90deg, var(--surface2), rgba(129,85,186,0.1), var(--surface2));
     padding: 0.75rem 1.5rem;
     display: flex;
     align-items: center;
@@ -534,9 +540,9 @@
     border-bottom: 1px solid var(--border);
   }
   .puzzle-dot { width: 10px; height: 10px; border-radius: 50%; }
-  .puzzle-dot.r { background: #cc2200; box-shadow: 0 0 6px #cc2200; }
+  .puzzle-dot.r { background: #5B3B84; box-shadow: 0 0 6px #5B3B84; }
   .puzzle-dot.y { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
-  .puzzle-dot.g { background: #00aa44; box-shadow: 0 0 6px #00aa44; }
+  .puzzle-dot.g { background: #BEABDE; box-shadow: 0 0 6px #BEABDE; }
   .puzzle-title {
     font-family: var(--heading);
     font-size: 10px;
@@ -575,7 +581,7 @@
     line-height: 1.15;
     letter-spacing: 0.05em;
     color: var(--gold-bright);
-    text-shadow: 0 0 30px rgba(201,168,76,0.3);
+    text-shadow: 0 0 30px rgba(129,85,186,0.3);
     margin-bottom: 1rem;
   }
   .contact-sub { color: var(--muted); font-size: 16px; font-style: italic; font-family: var(--body); }
@@ -607,7 +613,7 @@
   .contact-link:hover {
     border-color: var(--gold);
     color: var(--gold-bright);
-    box-shadow: 0 0 20px rgba(201,168,76,0.1);
+    box-shadow: 0 0 20px rgba(129,85,186,0.1);
   }
   .contact-link:hover::before { background: var(--gold); }
   .contact-link-icon { color: var(--gold); font-size: 1.1rem; width: 22px; flex-shrink: 0; }
@@ -695,7 +701,7 @@
   <div class="nav-logo">🌙 Diana R. Chin</div>
   <ul class="nav-links">
     <li><a href="#projects">Spell Cards</a></li>
-    <li><a href="#about">The Duelist</a></li>
+    <li><a href="#about">The Reader</a></li>
     <li><a href="#contact">Summon</a></li>
     <li><a href="https://github.com/dianarchin" class="btn btn-outline" style="padding:0.4rem 1.25rem; clip-path: none; border-radius:3px;">GitHub ↗</a></li>
   </ul>
@@ -704,15 +710,15 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eye">🌙</div>
-  <div class="hero-tag">Data Analyst · Card Duelist</div>
+  <div class="hero-tag">Data & Business Analyst · Card Reader</div>
   <h1>I read the data.<br>It tells me <span class="gold">things.</span></h1>
-  <p class="hero-subtitle">★★★★★ — Analyst of the Shadow Realm</p>
+  <p class="hero-subtitle">★★★★★ — Former tarot reader, current data reader</p>
   <p class="hero-desc">
-    Bridging a background in product operations and technical support, I'm pivoting into data analytics to help businesses cut through the noise and actually understand what's happening under the hood. Skilled in Python, SQL, and Tableau, I also leverage AI assisted tools to optimize workflows, freeing up more time for what matters most: data storytelling and insights.
+    Currently in product operations, I sit where business and data meet — turning Jira backlogs, sprint work, and messy ticket data into the insights and process improvements that help teams make better decisions. I work fluently across SQL, Python, and Tableau, partner closely with product managers on prioritization, and use AI-assisted tools to move faster — so more of my time goes to what actually matters: asking the right questions and telling the story the data is trying to tell.
   </p>
   <div class="hero-cta">
-    <a href="#projects" class="btn btn-primary">Draw a Card →</a>
-    <a href="#contact" class="btn btn-outline">Send a Duel Request</a>
+    <a href="#projects" class="btn btn-primary">Reveal the Spread →</a>
+    <a href="#contact" class="btn btn-outline">Request a Reading →</a>
   </div>
 </section>
 
@@ -728,6 +734,7 @@
       <div class="divider-line"></div>
     </div>
 
+    <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-card-type">Effect Monster</div>
         <span class="skill-icon">🐍</span>
@@ -752,6 +759,13 @@
         <div class="skill-atk">ATK: ██████░░░░ &nbsp; DEF: █████████░</div>
       </div>
 
+      <div class="skill-card">
+        <div class="skill-card-type">Effect Monster</div>
+        <span class="skill-icon">⚙️</span>
+        <div class="skill-name">Ops & Agile</div>
+        <div class="skill-desc">Commands the flow of work across teams — Jira, Agile sprints, requirements gathering, stakeholder wrangling, and process improvement bent to order.</div>
+        <div class="skill-atk">ATK: █████████░ &nbsp; DEF: ████████░░</div>
+      </div>
     </div>
   </div>
 </section>
@@ -769,6 +783,30 @@
       <div class="divider-line"></div>
     </div>
 
+    <div class="project-card">
+      <div>
+        <div class="project-card-label">⬡ Ritual Spell Card</div>
+        <div class="project-tags">
+          <span class="tag gold-tag">Jira</span>
+          <span class="tag">Microsoft Excel</span>
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">Process Analysis</span>
+          <span class="tag">Synthetic Data</span>
+        </div>
+        <div class="project-title">Reading a Messy Ticket Queue</div>
+        <p class="project-desc">
+          A methodology walkthrough on a synthetic ticket queue I built from scratch — a demonstration of how a product operations analyst turns a messy backlog into insight. Using a Jira-style export, Excel cleanup, and pivot tables, I work through volume trends, category shifts, and a subtle finding buried in the priority field. Built on invented data; the focus is the process, not any real company.
+        </p>
+        <div class="project-links">
+          <a href="https://dianarchin.hashnode.dev/reading-a-messy-ticket-queue-a-methodology-walkthrough" class="project-link">⬡ Read the Walkthrough ↗</a>
+        </div>
+      </div>
+      <div class="project-meta">
+        <span class="project-num">01</span>
+        <span class="project-type">Methodology Walkthrough</span>
+      </div>
+    </div>
+
     <div class="project-card" style="--card-accent: var(--accent4);">
       <div>
         <div class="project-card-label">⬡ Trap Card</div>
@@ -781,14 +819,14 @@
         </div>
         <div class="project-title">Yu-Gi-Oh! World Championship Database</div>
         <p class="project-desc">
-          A comprehensive PostgreSQL database analyzing 21 years of Yu-Gi-Oh! World Championship data from 2004 to 2025. Tracks 18 championships, 36 professional players across 5 continents, 26 competitive deck archetypes, and 72 iconic cards. Features advanced SQL querying, Docker containerization, and Tableau visualizations.
+          Started with a question: which regions and deck archetypes actually dominated 21 years of competition, and how did the meta shift over time? To answer it I designed a normalized PostgreSQL database (18 championships, 36 players, 26 archetypes), wrote the SQL to surface the trends, and visualized them in Tableau — with Docker for a reproducible setup. Swap "decks" for products and "regions" for markets, and it's the same competitive-performance analysis a business runs on its own data.
         </p>
         <div class="project-links">
           <a href="https://github.com/dianarchin/yugioh-world-championship-database" class="project-link">⬡ View on GitHub ↗</a>
         </div>
       </div>
       <div class="project-meta">
-        <span class="project-num">01</span>
+        <span class="project-num">02</span>
         <span class="project-type">Database & Analysis</span>
       </div>
     </div>
@@ -805,14 +843,14 @@
         </div>
         <div class="project-title">Goodreads Book Dashboard</div>
         <p class="project-desc">
-          An interactive Jupyter notebook dashboard analyzing 485 books from my personal Goodreads reading history. Features 9+ visualizations covering rating patterns, reading timelines, favorite authors, page count distributions, and year-over-year trends.
+          I treated my own reading history (485 books) as a dataset a stakeholder might care about, then asked what's actually worth knowing: what drives a high rating, how habits shift over time, where the patterns break. Built in a Jupyter notebook with Pandas and 9+ visualizations — but the real exercise was turning a vague "what's going on here?" into specific, answerable questions, and presenting the answers so a non-technical reader gets them at a glance.
         </p>
         <div class="project-links">
           <a href="https://github.com/dianarchin/book-dashboard" class="project-link">⬡ View on GitHub ↗</a>
         </div>
       </div>
       <div class="project-meta">
-        <span class="project-num">02</span>
+        <span class="project-num">03</span>
         <span class="project-type">EDA & Visualization</span>
       </div>
     </div>
@@ -828,14 +866,14 @@
         </div>
         <div class="project-title">Yu-Gi-Oh! TCG Market Analysis Dashboard</div>
         <p class="project-desc">
-          An interactive Tableau dashboard analyzing the Yu-Gi-Oh! TCG market from 2020 to 2026. Covers price trends, estimated unit sales, market price appreciation, popularity vs collector value, and historical performance across deck eras.
+          A market-analysis dashboard treating a collectibles market like any other product market: what's appreciating, what's losing value, and where popularity and price diverge. Using Tableau and Excel on 2020–2026 data, I tracked price trends, estimated unit sales, and collector-value gaps — the same demand, pricing, and segment-performance questions an analyst asks of any business. Cleaning messy real-world data into something decision-ready was half the work.
         </p>
         <div class="project-links">
-          <a href="https://duelingwithdatasets.hashnode.dev/building-a-yu-gi-oh-tcg-market-analysis-dashboard-in-tableau" class="project-link">⬡ Read the Blog ↗</a>
+          <a href="https://dianarchin.hashnode.dev/building-a-yu-gi-oh-tcg-market-analysis-dashboard-in-tableau" class="project-link">⬡ Read the Blog ↗</a>
         </div>
       </div>
       <div class="project-meta">
-        <span class="project-num">03</span>
+        <span class="project-num">04</span>
         <span class="project-type">Market Analysis</span>
       </div>
     </div>
@@ -848,7 +886,7 @@
   <div class="section-wrap">
     <div class="section-header">
       <span class="section-num">⬡ Chapter III ⬡</span>
-      <h2 class="section-title">The Duelist's Scroll</h2>
+      <h2 class="section-title">The Reader's Scroll</h2>
     </div>
     <div class="divider">
       <div class="divider-line"></div>
@@ -860,28 +898,30 @@
         <div class="puzzle-dot r"></div>
         <div class="puzzle-dot y"></div>
         <div class="puzzle-dot g"></div>
-        <span class="puzzle-title">⚡ millennium_puzzle.py ⚡</span>
+        <span class="puzzle-title">🌙 millennium_puzzle.py 🌙</span>
       </div>
       <div class="puzzle-body">
-        <div><span class="t-comment"># — the duelist awakens ——————————————</span></div>
+        <div><span class="t-comment"># — same instinct, different deck ——————————</span></div>
         <br>
         <div><span class="t-key">name</span> &nbsp;&nbsp;&nbsp;&nbsp;= <span class="t-string">"Diana Chin"</span></div>
-        <div><span class="t-key">role</span> &nbsp;&nbsp;&nbsp;&nbsp;= <span class="t-string">"Data Analyst"</span></div>
+        <div><span class="t-key">role</span> &nbsp;&nbsp;&nbsp;&nbsp;= <span class="t-string">"Data & Business Analyst"</span></div>
         <div><span class="t-key">location</span> = <span class="t-string">"New York, NY"</span></div>
+        <div><span class="t-key">past_life</span> = <span class="t-string">"professional tarot reader"</span></div>
         <br>
         <div><span class="t-key">focus</span> = [</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"turning raw data into stories"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"turning raw data into decisions"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"finding the process behind the numbers"</span>,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"dashboards non-technical teams actually use"</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"bridging ops knowledge with analytics"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"translating between business and engineering"</span>,</div>
         <div>]</div>
         <br>
         <div><span class="t-key">currently</span> = {</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"open_to"</span>: <span class="t-string">"new opportunities"</span>,</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"obsessed_with"</span>: <span class="t-string">"Yu-Gi-Oh &amp; data viz"</span>,</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-string">"obsessed_with"</span>: <span class="t-string">"tarot, Yu-Gi-Oh &amp; data viz"</span>,</div>
         <div>}</div>
         <br>
         <div><span class="t-prompt">▶</span> <span class="t-cmd">python millennium_puzzle.py</span></div>
-        <div><span class="t-comment"># It's time to duel. &nbsp;</span><span class="t-cursor"></span></div>
+        <div><span class="t-comment"># the cards never lie. neither does the data. &nbsp;</span><span class="t-cursor"></span></div>
       </div>
     </div>
   </div>
@@ -901,7 +941,7 @@
     </div>
     <div class="contact-grid">
       <div>
-        <h2 class="contact-heading">Let's Duel.<br>(Or Collaborate.)</h2>
+        <h2 class="contact-heading">Let's Do a Reading.<br>(Or Collaborate.)</h2>
         <p class="contact-sub">Open to freelance projects, full-time roles, and interesting data problems. I activate my trap card: <em>Available for Hire.</em></p>
       </div>
       <div class="contact-links">
@@ -926,11 +966,11 @@
             linkedin.com/in/dianarchin
           </div>
         </a>
-        <a href="https://duelingwithdatasets.hashnode.dev/" class="contact-link">
+        <a href="https://dianarchin.hashnode.dev/" class="contact-link">
           <span class="contact-link-icon">✍</span>
           <div>
             <span class="contact-link-label">Blog</span>
-            duelingwithdatasets.hashnode.dev
+            dianarchin.hashnode.dev
           </div>
         </a>
 
@@ -940,8 +980,8 @@
 </section>
 
 <footer>
-  <span>⚡ Diana R. Chin — 2026</span>
-  <span>It's time to duel...with data · GitHub Pages</span>
+  <span>🌙 Diana R. Chin — 2026</span>
+  <span>The numbers always tell. You just have to listen. · GitHub Pages</span>
 </footer>
 
 <script>
